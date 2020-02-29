@@ -10,6 +10,9 @@ public class Application {
         BillPughLogger billPughLogger = BillPughLogger.getInstance();
         billPughLogger.log(LEVEL.INFO, "info message");
 
+        EnumLogger enumLogger = EnumLogger.INSTANCE;
+        enumLogger.log(LEVEL.INFO, "info msg 3");
+
     }
 
 }
