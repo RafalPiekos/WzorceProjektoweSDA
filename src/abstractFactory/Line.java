@@ -10,7 +10,12 @@ public class Line implements GeometricShape {
     }
 
     @Override
-    public void circuit(){
-        System.out.println("Calculating circuit of the line");
+    public void perimeter(){
+        System.out.println("Calculating perimeter of the line");
+    }
+
+    @Override
+    public void area() {
+        System.out.println("Calculating area of the line");
     }
 }

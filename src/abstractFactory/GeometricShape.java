@@ -6,5 +6,6 @@ package abstractFactory;
  */
 public interface GeometricShape {
     void draw();
-    void circuit();
+    void perimeter();
+    void area();
 }

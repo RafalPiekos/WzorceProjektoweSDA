@@ -50,6 +50,7 @@ public class Application {
             System.out.println("Shape with given name doesn't exist.");
         }
 
-        shape.circuit();
+        shape.perimeter();
+        shape.area();
     }
 }
