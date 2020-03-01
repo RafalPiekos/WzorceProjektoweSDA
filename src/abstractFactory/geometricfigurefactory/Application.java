@@ -1,7 +1,7 @@
-package abstractFactory;
+package abstractFactory.geometricfigurefactory;
 
-import static abstractFactory.FactoryType.THREE_D_SHAPE_FACTORY;
-import static abstractFactory.FactoryType.TWO_D_SHAPE_FACTORY;
+import static abstractFactory.geometricfigurefactory.FactoryType.THREE_D_SHAPE_FACTORY;
+import static abstractFactory.geometricfigurefactory.FactoryType.TWO_D_SHAPE_FACTORY;
 
 /**
  * Client

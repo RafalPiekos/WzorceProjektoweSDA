@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractFactory.geometricfigurefactory;
 
 public enum FactoryType {
     TWO_D_SHAPE_FACTORY,

@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractFactory.geometricfigurefactory;
 
 public enum  ShapeType {
     LINE,
