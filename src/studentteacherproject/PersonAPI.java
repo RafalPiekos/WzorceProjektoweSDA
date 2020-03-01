@@ -4,8 +4,6 @@ import java.util.List;
 
 public class PersonAPI {
 
-    private DisplayContext displayContext = new DisplayContext();
-
     public Student addStudent(String firstName, String lastName, String course) {
         return new Student.StudentBuilder(firstName, lastName, course).build();
     }
@@ -14,14 +12,18 @@ public class PersonAPI {
         return new Teacher.TeacherBuilder(firstName, lastName, blocks).build();
     }
 
-    public void displayFirstByName(Person person) {
-        displayContext.setDisplayStrategy(new FirstNameDisplay());
-        displayContext.display(person);
+    public void displayFirstByName(List<Person> persons) {
+        this.display(new FirstNameDisplay(), persons);
     }
 
-    public void displayByLastName(Person person) {
-        displayContext.setDisplayStrategy(new LastNameDisplay());
-        displayContext.display(person);
+    public void displayByLastName(List<Person> persons) {
+        this.display(new LastNameDisplay(), persons);
+    }
+
+    private void display(DisplayStrategy displayStrategy, List<Person> persons) {
+        DisplayContext displayContext = new DisplayContext();
+        displayContext.setDisplayStrategy(displayStrategy);
+        displayContext.display(persons);
     }
 
 }

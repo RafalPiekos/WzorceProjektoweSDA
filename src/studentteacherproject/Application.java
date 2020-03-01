@@ -21,13 +21,8 @@ public class Application {
             System.out.println(person);
         }
 
-        for(Person person : personList) {
-            personAPI.displayByLastName(person);
-        }
-
-        for(Person person : personList) {
-            personAPI.displayFirstByName(person);
-        }
+        personAPI.displayFirstByName(personList);
+        personAPI.displayByLastName(personList);
 
     }
 
